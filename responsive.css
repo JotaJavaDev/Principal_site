@@ -1,0 +1,177 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    padding-inline: 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px 0 10px 10px;
+  }
+
+  .menu-toggle span {
+    width: 24px;
+    height: 1px;
+    background: var(--green);
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 14px 20px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    z-index: 4;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .hero-copy,
+  .terminal-card,
+  .stack-item,
+  .project-card,
+  .about-copy,
+  .contact {
+    min-width: 0;
+  }
+
+  .terminal-card {
+    margin-right: 0;
+    transform: rotate(1deg) scale(.98);
+    transform-origin: center;
+  }
+
+  .terminal-top {
+    gap: 8px;
+    font-size: 10px;
+  }
+
+  .terminal-body {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  .stack-grid,
+  .project-grid {
+    display: block;
+  }
+
+  .stack-item,
+  .stack-item + .stack-item {
+    min-height: 0;
+    padding: 30px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stack-item p {
+    min-height: 0;
+  }
+
+  .project-card {
+    margin-bottom: 44px;
+  }
+
+  .project-visual {
+    min-height: 250px;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .about-facts {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .contact-top {
+    display: block;
+  }
+
+  .contact-top p:last-child {
+    margin-top: 35px;
+    text-align: left;
+  }
+
+  .project-photo {
+    min-height: 0;
+  }
+
+  .project-meta {
+    gap: 16px;
+  }
+
+  .project-meta h3,
+  .project-meta p {
+    overflow-wrap: anywhere;
+  }
+
+  .email-link {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-bottom div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 20px;
+  }
+
+  footer {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-shell {
+    padding-inline: 16px;
+  }
+
+  .site-header,
+  footer {
+    padding-inline: 16px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .terminal-body {
+    font-size: 10px;
+  }
+}
