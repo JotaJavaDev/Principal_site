@@ -139,6 +139,23 @@ body {
     display: block;
   }
 
+  .about-mark {
+    margin-bottom: 88px;
+  }
+
+  .about h2 {
+    max-width: 100%;
+    font-size: clamp(30px, 9vw, 40px);
+    line-height: 1.05;
+    overflow-wrap: normal;
+  }
+
+  .about-copy p:not(.section-number) {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
   .about-facts {
     padding-left: 0;
     border-left: 0;
