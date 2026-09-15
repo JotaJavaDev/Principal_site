@@ -143,6 +143,10 @@ body {
     margin-bottom: 88px;
   }
 
+  .about-copy {
+    padding-top: 16px;
+  }
+
   .about h2 {
     max-width: 100%;
     font-size: clamp(30px, 9vw, 40px);
