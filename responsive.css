@@ -180,7 +180,10 @@ body {
   }
 
   .project-photo {
+    height: auto;
     min-height: 0;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
   }
 
   .project-meta {
