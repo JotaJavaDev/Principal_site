@@ -3,7 +3,7 @@ const mainNav = document.querySelector('#mainNav');
 const filters = document.querySelectorAll('.filter');
 const projectCards = document.querySelectorAll('.project-card');
 const noProjects = document.querySelector('#noProjects');
-const projectPhoto = document.querySelector('.project-photo');
+const projectPhotos = document.querySelectorAll('.project-photo');
 const imageLightbox = document.querySelector('#imageLightbox');
 const lightboxImage = document.querySelector('#lightboxImage');
 const lightboxClose = document.querySelector('#lightboxClose');
@@ -50,12 +50,14 @@ function closeLightbox() {
   document.body.classList.remove('lightbox-open');
 }
 
-projectPhoto.addEventListener('click', () => {
-  lightboxImage.src = projectPhoto.src;
-  lightboxImage.alt = projectPhoto.alt;
-  imageLightbox.hidden = false;
-  document.body.classList.add('lightbox-open');
-  lightboxClose.focus();
+projectPhotos.forEach(photo => {
+  photo.addEventListener('click', () => {
+    lightboxImage.src = photo.src;
+    lightboxImage.alt = photo.alt;
+    imageLightbox.hidden = false;
+    document.body.classList.add('lightbox-open');
+    lightboxClose.focus();
+  });
 });
 
 lightboxClose.addEventListener('click', closeLightbox);

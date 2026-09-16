@@ -121,6 +121,7 @@ body {
 
   .project-visual {
     min-height: 250px;
+    aspect-ratio: 16 / 10;
   }
 
   .project-meta {
